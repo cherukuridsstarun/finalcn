@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{  
+public static void main(String args[])  
+{  
+int i,count=0;
+Scanner str=new Scanner(System.in);
+String s1=str.nextLine();
+
+for(i=0;i<s1.length();i++)
+{
+   
+    if(s1.charAt(i)=='1')
+    count++;
+    if(s1.charAt(i)=='0')
+    count=0;
+    System.out.print(s1.charAt(i));
+    if(count==5)
+    {
+        System.out.print("0");
+        count=0;
+    }
+}
+}
+}
